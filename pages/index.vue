@@ -2038,13 +2038,6 @@ export default {
         return scripts.length && temp
       }
       return false
-    }
-    openPopUpforPayMent() {
-        this.allowDownload()
-        return
-      }
-      !localStorage.getItem('user')
-      await this.openPopUpforPayMent()
     },
     async allowDownload() {
       if (this.downloadChecked) {
