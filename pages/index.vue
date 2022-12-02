@@ -2038,7 +2038,7 @@ export default {
         return scripts.length && temp
       }
       return false
-    },
+    }
     openPopUpforPayMent() {
         this.allowDownload()
         return
