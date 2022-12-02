@@ -2038,7 +2038,15 @@ export default {
         return scripts.length && temp
       }
       return false
-    },
+    }
+
+      !localStorage.getItem('user')
+        ? this.openModal()
+        : this.downloadByLocalStorageData()
+    }
+    async downloadPackage() {
+      await this.openPopUpforPayMent()
+    }
     async allowDownload() {
       if (this.downloadChecked) {
         this.PreviewMode = false
