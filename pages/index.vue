@@ -2039,6 +2039,13 @@ export default {
       }
       return false
     },
+    openPopUpforPayMent() {
+        return this.allowDownload()
+      
+    },
+    async downloadPackage() {
+      await this.openPopUpforPayMent()
+    },
     async allowDownload() {
       if (this.downloadChecked) {
         this.PreviewMode = false
