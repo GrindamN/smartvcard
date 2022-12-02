@@ -2040,16 +2040,10 @@ export default {
       return false
     },
     openPopUpforPayMent() {
-      let isPresent = localStorage.getItem('license_key')
-      if (isPresent !== null) {
         this.allowDownload()
         return
       }
       !localStorage.getItem('user')
-        ? this.openModal()
-        : this.downloadByLocalStorageData()
-    },
-    async downloadPackage() {
       await this.openPopUpforPayMent()
     },
     async allowDownload() {
